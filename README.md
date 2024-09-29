@@ -68,3 +68,38 @@ int main()
 	
 
 }
+// задание со звездочкой
+#include <locale.h>
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+#define _USE_MATH_DEFINS
+
+
+int main()
+{
+	setlocale(LC_ALL, "RUS");
+	float x, y;
+	puts("Введите координату x");
+	scanf("%f", &x);
+	system("pause");
+	puts("Введите координату y");
+	scanf("%f", &y);
+	// po x ot -4 do +5
+	// po y ot -3 do +4 
+	if ((x >= (-4)) && (x <= 5) && (y <= 0) && (y >= (-3)))
+	{
+		printf("Точка с координатами (%.2f,%.2f) - принадлежит заштрихованной фигуре", x, y);
+	}
+	else
+		if ((x >= (-2)) && (x <= 2) && (y >= 0) && (y <= 4))
+		{
+			printf("Точка с координатами (%.2f,%.2f) - принадлежит заштрихованной фигуре", x, y);
+		}
+		else
+		{
+			printf("Точка с координатами (%.2f,%.2f) - не принадлежит заштрихованной фигуре", x, y);
+		}
+		
+
+}
